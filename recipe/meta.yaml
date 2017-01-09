@@ -1,4 +1,4 @@
-{% set version = "0.19.14" %}
+{% set version = "0.19.16" %}
 
 package:
   name: octave_kernel
@@ -7,7 +7,7 @@ package:
 source:
   fn: octave_kernel-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/o/octave_kernel/octave_kernel-{{ version }}.tar.gz
-  sha256: da0df70b40c2ed3cbedaf63d9f7f42910ff755e1d7ef68d5f2375df580780692
+  sha256: 98cec0c9bc35fac1153645a6b10fd8bbf5ca3ac6746c1e13ffb164eff6549743
 
 build:
     number: 0
@@ -17,14 +17,14 @@ requirements:
   build:
     - python
     - setuptools
-    - metakernel >=0.16.1
-    - jupyter_client
+    - metakernel >=0.17.2
+    - jupyter_client >=4.3
     - ipykernel
 
   run:
     - python
-    - metakernel >=0.16.1
-    - jupyter_client
+    - metakernel >=0.17.2
+    - jupyter_client >=4.3
     - ipykernel
 
 test:
