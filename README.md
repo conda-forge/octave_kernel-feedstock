@@ -1,9 +1,9 @@
 About octave_kernel
 ===================
 
-Home: http://github.com/calsto/octave_kernel
+Home: https://github.com/Calysto/octave_kernel
 
-Package license: BSD
+Package license: BSD 3-clause
 
 Feedstock license: BSD 3-Clause
 
