@@ -28,18 +28,17 @@ requirements:
     - ipykernel
 
 test:
-  # Python imports
   imports:
     - octave_kernel
     - octave_kernel.install
 
 about:
-  home: http://github.com/calsto/octave_kernel
-  license: BSD
+  home: https://github.com/Calysto/octave_kernel
+  license: BSD 3-clause
   summary: 'A Jupyter kernel for Octave.'
   license_family: BSD
 
-
 extra:
-    recipe-maintainers:
-        - blink1073
+  recipe-maintainers:
+    - blink1073
+    - ocefpaf
