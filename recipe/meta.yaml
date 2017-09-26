@@ -17,7 +17,7 @@ requirements:
   build:
     - python
     - setuptools
-    - metakernel >=0.18.0ke
+    - metakernel >=0.18.0
     - jupyter_client >=4.3
     - ipykernel
 
