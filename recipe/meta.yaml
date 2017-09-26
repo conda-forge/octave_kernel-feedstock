@@ -30,7 +30,6 @@ requirements:
 test:
   imports:
     - octave_kernel
-    - octave_kernel.install
 
 about:
   home: https://github.com/Calysto/octave_kernel
