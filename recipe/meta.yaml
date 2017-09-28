@@ -1,4 +1,4 @@
-{% set version = "0.27.0" %}
+{% set version = "0.27.2" %}
 
 package:
   name: octave_kernel
@@ -7,17 +7,16 @@ package:
 source:
   fn: octave_kernel-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/o/octave_kernel/octave_kernel-{{ version }}.tar.gz
-  sha256: f9caec892d762f22aa8cac218e09e23b69c4a28a6c78cd6de95c7e80c9dfd96d
+  sha256: 7a39e8c7bd4f71d4aa202b7fcc41a37788fca49bd73deba524fd53b86ee3afc2
 
 build:
     number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - metakernel >=0.18.0ke
+    - metakernel >=0.18.0
     - jupyter_client >=4.3
     - ipykernel
 
@@ -30,7 +29,6 @@ requirements:
 test:
   imports:
     - octave_kernel
-    - octave_kernel.install
 
 about:
   home: https://github.com/Calysto/octave_kernel

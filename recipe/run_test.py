@@ -8,7 +8,7 @@ with open(specfile, 'r') as fh:
     spec = json.load(fh)
 
 
-if spec['argv'][0] != sys.executable:
+if spec['argv'][0].replace('/', os.sep) != sys.executable:
     raise ValueError('The specfile seems to have the wrong prefix. \n'
                      'Specfile: {}; Expected: {};'
                      ''.format(spec['argv'][0], sys.executable))
