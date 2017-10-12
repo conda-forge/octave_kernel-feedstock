@@ -16,14 +16,14 @@ requirements:
   build:
     - python
     - setuptools
-    - metakernel >=0.18.0
-    - jupyter_client >=4.3
+    - metakernel >=0.20.7
+    - jupyter_client >=4.3.0
     - ipykernel
 
   run:
     - python
-    - metakernel >=0.18.0
-    - jupyter_client >=4.3
+    - metakernel >=0.20.7
+    - jupyter_client >=4.3.0
     - ipykernel
 
 test:
