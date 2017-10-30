@@ -14,9 +14,7 @@ Summary: A Jupyter kernel for Octave.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/octave_kernel-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/octave_kernel-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/octave_kernel-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/octave_kernel-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/octave_kernel-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/octave-kernel-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/octave_kernel-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/octave_kernel-feedstock)
 
 Current release info
 ====================
