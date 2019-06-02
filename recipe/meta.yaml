@@ -18,13 +18,13 @@ requirements:
     - pip
     - python
     - setuptools
-    - metakernel >=0.23.0
+    - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
 
   run:
     - python
-    - metakernel >=0.23.0
+    - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
 
