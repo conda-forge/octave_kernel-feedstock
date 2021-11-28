@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/Calysto/octave_kernel
-  license: BSD-3-clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: A Jupyter kernel for Octave.
   license_family: BSD
