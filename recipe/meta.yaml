@@ -16,14 +16,14 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.7
     - setuptools
     - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
 
   run:
-    - python
+    - python >=3.7
     - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/Calysto/octave_kernel
-  license: BSD 3-clause
+  license: BSD-3-clause
   license_file: LICENSE.txt
   summary: A Jupyter kernel for Octave.
   license_family: BSD
