@@ -1,4 +1,4 @@
-{% set version = "0.32.0" %}
+{% set version = "0.33.1" %}
 
 package:
   name: octave_kernel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/octave_kernel/octave_kernel-{{ version }}.tar.gz
-  sha256: 2eeab98a51ce8eddb182d90e5324f1c0bf49b9b42bce6bb996e4afe198ebcb35
+  sha256: 21cd40465d5d8aa6ad2a1ee69220c536517e7cbd6900e8da0b2928b7860d46ec
 
 build:
   noarch: python
@@ -16,14 +16,14 @@ build:
 requirements:
   host:
     - pip
-    - python
-    - setuptools
+    - python >=3.7
+    - jupyter-packaging >=0.9,<2
     - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
 
   run:
-    - python
+    - python >=3.7
     - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/Calysto/octave_kernel
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: A Jupyter kernel for Octave.
   license_family: BSD
