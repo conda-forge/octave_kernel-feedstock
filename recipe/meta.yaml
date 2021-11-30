@@ -17,7 +17,7 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - jupyter_packaging
+    - jupyter-packaging >=0.9,<2
     - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
