@@ -21,6 +21,7 @@ requirements:
     - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
+    - hatchling >=1.0
 
   run:
     - python >=3.7
