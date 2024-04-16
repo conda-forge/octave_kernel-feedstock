@@ -1,4 +1,4 @@
-{% set version = "0.35.1" %}
+{% set version = "0.36.0" %}
 
 package:
   name: octave_kernel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/octave_kernel/octave_kernel-{{ version }}.tar.gz
-  sha256: 96ca1e21315c0b76b550a58ffc0e86ad885a7eefe4a37d7beb5d4dd87cb4d5f4
+  sha256: 925882f8915c86ed75b6db8e1341deed980dba0be73bf07365d3ea08961a1ddb
 
 build:
   noarch: python
