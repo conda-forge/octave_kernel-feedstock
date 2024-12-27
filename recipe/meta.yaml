@@ -5,18 +5,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/o/octave_kernel/octave_kernel-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/o/octave_kernel/octave_kernel-{{ version }}.tar.gz
   sha256: 925882f8915c86ed75b6db8e1341deed980dba0be73bf07365d3ea08961a1ddb
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - jupyter-packaging >=0.9,<2
     - metakernel >=0.24.0
     - jupyter_client >=4.3.0
@@ -24,12 +24,14 @@ requirements:
     - hatchling >=1.0
 
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - metakernel >=0.24.0
     - jupyter_client >=4.3.0
     - ipykernel
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - octave_kernel
 
