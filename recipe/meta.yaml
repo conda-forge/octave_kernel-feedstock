@@ -21,7 +21,7 @@ requirements:
     - metakernel >=1.0
     - jupyter_client >=8.1.0
     - ipykernel >=6.22.0
-    - poetry >=2.3.1
+    - hatchling >=1.5
 
   run:
     - python >={{ python_min }}
