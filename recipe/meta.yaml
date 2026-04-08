@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/octave_kernel/octave_kernel-{{ version }}.tar.gz
-  sha256: e51b806989ed5ce9889c789440ed818351fe584e094ca053de79c2ac2eb4162b
+  sha256: d4fd1ecd69b413a7c1c6ff8ba4e80d6d8ccad92943eaa74562a0960325877ceb
 
 build:
   noarch: python
