@@ -11,29 +11,33 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - metakernel >=1.0
+    - metakernel >=1.0.6
     - jupyter_client >=8.1.0
     - ipykernel >=6.22.0
     - hatchling >=1.5
 
   run:
     - python >={{ python_min }}
-    - metakernel >=1.0.0
+    - metakernel >=1.0.6
     - jupyter_client >=8.1.0
     - ipykernel >=6.22.0
+    - rpds-py >=2026.5.1
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - octave_kernel
+  commands:
+    - pip check
 
 about:
   home: https://github.com/Calysto/octave_kernel
